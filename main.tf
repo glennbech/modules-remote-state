@@ -1,7 +1,7 @@
 module "s3_website" {
   source = "./modules/s3-website"
 
-  bucket_name = "glenn-practice-website"  # Bytt til noe globalt unikt (f.eks. ditt-navn-pgr301-website)
+  bucket_name = "glenn-practice-website" # Bytt til noe globalt unikt (f.eks. ditt-navn-pgr301-website)
 
   tags = {
     Name        = "PGR301 Lab"

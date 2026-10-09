@@ -16,7 +16,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket       = "pgr301-terraform-state"
-    key          = "glenn-practice/website/terraform.tfstate"  # Bytt "ola-nordmann" til ditt eget navn
+    key          = "glenn-practice/website/terraform.tfstate" # Bytt "ola-nordmann" til ditt eget navn
     region       = "eu-west-1"
     use_lockfile = true
     encrypt      = true
