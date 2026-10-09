@@ -1,13 +1,21 @@
 module "s3_website" {
-  source = "./modules/s3-website"
-
+  source      = "./modules/s3-website"
   bucket_name = "glenn-practice-website" # Bytt til noe globalt unikt (f.eks. ditt-navn-pgr301-website)
+}
 
-  tags = {
-    Name        = "PGR301 Lab"
-    Environment = "Demo"
-    ManagedBy   = "Terraform"
-  }
+module "s3_website_1" {
+  source      = "./modules/s3-website"
+  bucket_name = "glenn-practice-website-2" # Bytt til noe globalt unikt (f.eks. ditt-navn-pgr301-website)
+}
+
+module "s3_website_3" {
+  source      = "./modules/s3-website"
+  bucket_name = "glenn-practice-website-3" # Bytt til noe globalt unikt (f.eks. ditt-navn-pgr301-website)
+}
+
+module "s3_website_4" {
+  source      = "./modules/s3-website"
+  bucket_name = "glenn-practice-website-4" # Bytt til noe globalt unikt (f.eks. ditt-navn-pgr301-website)
 }
 
 output "s3_website_url" {
